@@ -1,0 +1,15 @@
+* Create local folder for project
+* Add project's files to folder
+* Create repository on GitHub with all required files
+* Attach local folder to GitHub repository
+** git init
+** git config user.name "MyUserName"
+** git config user.email "email@example.org"
+** git branch -m main
+** git remote add origin git@github.com:greenln/project.zero.git
+* Merge local and remote files
+** git config pull.rebase false
+** git pull origin main --allow-unrelated-histories
+** git add .
+** git commit -m "First commit"
+** git push -u origin main
